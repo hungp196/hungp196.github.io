@@ -1,4 +1,12 @@
-p{
-  color: blue;
-  font-size: 20px;
+h1{
+  color: red;
+}
+  p{
+     color: blue;
+     font-size: 20px;
+     text-align: center;
+     text-transform: capitalize;
+}
+img{
+  width: 40%;
 }
