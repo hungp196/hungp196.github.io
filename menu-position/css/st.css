@@ -1,0 +1,28 @@
+li {
+  font-size: 30px;
+  display: list-item;
+  border: 1px solid red;
+  background-color: yellow;
+  list-style-type: none;
+}
+
+.main-root {
+  position: relative;
+}
+
+.menu-right {
+  width: 300px;
+  position: absolute;
+}
+a:hover {
+  color: red;
+}
+.pt {
+  position: absolute;
+  left: 350px;
+}
+
+.top {
+  position: fixed;
+  top: 95%;
+}
