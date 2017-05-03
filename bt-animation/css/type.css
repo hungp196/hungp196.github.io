@@ -1,0 +1,61 @@
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+
+h1 {
+	animation: title 5s ease infinite;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 3em;
+  margin: 25px 0px 10px 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap {
+max-width: 1000px;
+margin-left: 150px;
+}
+
+.col {
+  float: left;
+  width: 33.3333333%;
+  padding: 2px;
+}
+
+.thumb {
+  width: 100%;
+  height: 250px;
+  border: 1px solid red;
+}
+
+@keyframes titlea {
+  0%,100%  {opacity: 0}
+  50% {opacity: 1}
+
+}
+
+@keyframes titleb {
+  0%,100%  {text-align: right; opacity: 1}
+  50% {text-align: center; opacity: 0}
+}
+
+h3 {
+  animation: titleb 5s ease infinite;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  transition: all 0.5s ease;
+  animation: titlea 5s ease infinite;
+}
