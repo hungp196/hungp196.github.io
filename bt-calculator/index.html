@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="manhinh">
+        <div class="sohang">
+          <p id="sothunhat"></p>
+          <p id="pheptinh"></p>
+          <p id="sothuhai"></p>
+        </div>
+        <div class="ketqua">
+          <h4 id="result"></h4>
+        </div>
+      </div>
+      <div class="banphim">
+            <button type="button" class="button" id="so1" onclick="press(this)">1</button>
+            <button type="button" class="button" id="so2" onclick="press(this)">2</button>
+            <button type="button" class="button" id="so3" onclick="press(this)">3</button>
+            <button type="button" class="button" id="cong" onclick="press(this)">+</button>
+            <button type="button" class="button" id="so4" onclick="press(this)">4</button>
+            <button type="button" class="button" id="so5" onclick="press(this)">5</button>
+            <button type="button" class="button" id="so6" onclick="press(this)">6</button>
+            <button type="button" class="button" id="tru" onclick="press(this)">-</button>
+            <button type="button" class="button" id="so7" onclick="press(this)">7</button>
+            <button type="button" class="button" id="so8" onclick="press(this)">8</button>
+            <button type="button" class="button" id="so9" onclick="press(this)">9</button>
+            <button type="button" class="button" id="nhan" onclick="press(this)">*</button>
+            <button type="button" class="button" id="so0" onclick="press(this)">0</button>
+            <button type="button" class="button" id="cham" onclick="press(this)">.</button>
+            <button type="button" class="button" id="cb2" onclick="canbac2()">&#8730</button>
+            <button type="button" class="button" id="chia" onclick="press(this)">/</button>
+            <button type="button" class="button" id="bp" onclick="binhphuong()">x<sup>2</sup></button>
+            <button type="button" class="button" id="gt" onclick="giaithua()">!</button>
+            <button type="button" class="button" id="clear" onclick="cleara()">C</button>
+            <button type="button" class="button" id="rs" onclick="thuchien()">=</button>
+        </div>
+    </div>
+
+      <script type="text/javascript">
+        var test = 1;
+
+        function press(button) {
+          if ((0<=Number(button.innerText)&&Number(button.innerText)<=9)||button.innerText==".") {
+            if(test==1){
+              document.getElementById("sothunhat").innerText += button.innerText;
+            }
+            else {
+              document.getElementById("sothuhai").innerText += button.innerText;
+            }
+          }else {
+            document.getElementById("pheptinh").innerText = button.innerText;
+            test = 0;
+          }
+        }
+
+        function thuchien() {
+          var x = Number(document.getElementById("sothunhat").innerText);
+          var y = Number(document.getElementById("sothuhai").innerText);
+          if(document.getElementById("pheptinh").innerText == "+"){
+            document.getElementById("result").innerText = x + y;
+          }else if (document.getElementById("pheptinh").innerText == "-") {
+            document.getElementById("result").innerText = x - y;
+          }else if (document.getElementById("pheptinh").innerText == "*") {
+            document.getElementById("result").innerText = x * y;
+          }else if (document.getElementById("pheptinh").innerText == "/") {
+            document.getElementById("result").innerText = x / y;
+          }
+        }
+
+        function canbac2(){
+          var x = Number(document.getElementById("sothunhat").innerText);
+          document.getElementById("result").innerHTML = Math.sqrt(x);
+        }
+
+        function binhphuong() {
+          var x = Number(document.getElementById("sothunhat").innerText);
+          document.getElementById("result").innerHTML = Math.pow(x,2);
+        }
+
+        function gtt(x) {
+          if(x<1) return 1;
+          else return gtt(x-1)*x;
+        }
+
+        function giaithua() {
+          var x = Number(document.getElementById("sothunhat").innerText);
+          document.getElementById("result").innerHTML = gtt(x);
+        }
+
+        function cleara(){
+          test = 1;
+          document.getElementById("sothunhat").innerText = '';
+          document.getElementById("sothuhai").innerText = '';
+          document.getElementById("pheptinh").innerText = '';
+          document.getElementById("result").innerText = '';
+        }
+
+
+
+      </script>
+  </body>
+</html>

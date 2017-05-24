@@ -1,0 +1,53 @@
+.container{
+  width: 300px;
+  height: 400px;
+  border: 1px solid #6b6b47;
+  background-color: #ccccb3;
+  margin: 0 auto;
+}
+.manhinh{
+  width: 280px;
+  height: 100px;
+  border: 1px solid #4d4d33;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-color:  #ffffff;
+}
+.banphim{
+  width: 290px;
+  height: 280px;
+  border: 1px solid #4d4d33;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+#sothunhat, #sothuhai,#pheptinh{
+  float: left;
+}
+.ketqua{
+  font-size: 200%;
+  margin-top: 50px;
+  text-align: right;
+}
+.button{
+    margin: 2px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    width: 23.5%;
+    height: 18.5%;
+    float: left;
+}
+#clear{
+  background-color: red;
+}
+#rs{
+  background-color: blue;
+}
+#cong, #tru, #nhan, #chia {
+  background-color: #cccc00;
+}
