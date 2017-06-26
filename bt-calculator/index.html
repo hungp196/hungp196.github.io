@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/cssJquery.css">
   </head>
   <body>
     <div class="container">
@@ -39,9 +40,12 @@
             <button type="button" class="button" id="clear" onclick="cleara()">C</button>
             <button type="button" class="button" id="rs" onclick="thuchien()">=</button>
         </div>
+        <button type="button" id="buttonTheme">Change Theme</button>
     </div>
 
+
       <script type="text/javascript">
+
         var test = 1;
 
         function press(button) {
@@ -99,9 +103,21 @@
           document.getElementById("pheptinh").innerText = '';
           document.getElementById("result").innerText = '';
         }
+      </script>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        $("#buttonTheme").click(function(){
+        $("#cong, #tru, #nhan, #chia, #rs").css("background-color","#ff9900");
+        $("#clear").css("background-color","#d6d6c2");
+        $(".manhinh").addClass("manhinhj");
+        $(".container").addClass("containerj");
+        $(".banphim").addClass("banphimj");
+        $(".ketqua").addClass("ketquaj");
+        $(".button").addClass("buttonj");
 
-
-
+    });
+});
       </script>
   </body>
 </html>

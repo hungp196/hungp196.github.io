@@ -1,19 +1,19 @@
-.container{
+.containerj{
   width: 300px;
   height: 400px;
-  border: 1px solid #6b6b47;
-  background-color: #ccccb3;
+  border: 1px solid #000000;
+  background-color: #000000;
   margin: 0 auto;
 }
-.manhinh{
+.manhinhj{
   width: 280px;
   height: 100px;
-  border: 1px solid #4d4d33;
+  border: 1px solid #ffffff;
   margin: 0 auto;
   margin-top: 5px;
-  background-color:  #ffffff;
+  background-color: #ffffff;
 }
-.banphim{
+.banphimj{
   width: 290px;
   height: 280px;
   border: 1px solid #4d4d33;
@@ -23,14 +23,14 @@
 #sothunhat, #sothuhai,#pheptinh{
   float: left;
 }
-.ketqua{
+.ketquaj{
   font-size: 200%;
   margin-top: 50px;
   text-align: right;
 }
-.button{
+.buttonj{
     margin: 2px;
-    background-color: #4CAF50; /* Green */
+    background-color: #d6d6c2;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -42,15 +42,13 @@
     height: 18.5%;
     float: left;
 }
-#buttonTheme{
-  margin-top: 20px;
+.pheptinh{
+  background-color: #ff9900;
 }
+
 #clear{
   background-color: red;
 }
-#rs{
-  background-color: blue;
-}
-#cong, #tru, #nhan, #chia {
-  background-color: #cccc00;
+.rs{
+  background-color: yellow;
 }
