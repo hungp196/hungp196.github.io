@@ -1,0 +1,39 @@
+body{
+  background-image: url("../img/bg1.jpg");
+}
+
+.wrap{
+  margin: 0 auto;
+}
+
+.card{
+  margin: 20px;
+  padding-right: 30px;
+}
+.card{
+  position: relative;
+  float: left;
+}
+.card .front{
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.card:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.flipped .back{
+  transform: rotateY(180deg);
+}
+.flipped .front{
+  transform: rotateY(0deg);
+}
+
+.card .front, .card .back{
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
