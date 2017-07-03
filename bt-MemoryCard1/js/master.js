@@ -68,7 +68,7 @@ $(function() {
   },
   function(isConfirm){
     if (isConfirm) {
-      //document.getElementById("theme-music").play();
+      document.getElementById("theme-music").play();
       cards = cards.concat(cards);
       shuffle(cards);
       var html = '';
