@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>Memory Card</title>
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
   </head>
+
   <body>
     <audio id="theme-music" preload="auto">
       <source src="audio/bg.mp3" type="audio/mpeg">
@@ -16,12 +19,16 @@
     <source src="audio/Correct-answer.mp3" type="audio/mpeg">
     </audio>
     <div class="wrap">
+      <div id="myProgress">
+        <div id="myBar"></div>
+      </div>
       <div class="content">
       </div>
-    
     </div>
 
     <script src="js\jquery-3.2.1.min.js"></script>
     <script src="js/master.js"></script>
+    <script src="dist/sweetalert.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
   </body>
 </html>
