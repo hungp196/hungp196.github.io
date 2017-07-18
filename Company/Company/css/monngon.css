@@ -1,0 +1,19 @@
+.content-monngon{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.content-monngon h1{
+  color: green;
+  text-align: center;
+}
+.monngon-raumuong{
+  margin-top: 50px;
+  border-bottom: 2px solid green;
+}
+.monngon-raumuong img{
+  width: 100%;
+  margin-bottom: 2px;
+}
+.monngon-raumuong h3,li{
+  color: #000;
+}

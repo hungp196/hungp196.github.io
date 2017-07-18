@@ -1,0 +1,41 @@
+/*---------product----------*/
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    width: 40px;
+    height: 100%;
+    margin-left: -1px;
+}
+.menu-product>li{
+  margin: 40px;
+	width: 130px;
+}
+.menu-product>li>a{
+	padding:1px;
+}
+.menu-product>li.active>a, .menu-product>li.active>a:hover, .menu-product>li.active>a:focus, .menu-product>li.checked {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+		border-top: #fff;
+		border-right: #fff;
+    border-left: #fff;
+    border-bottom: 2px solid green;
+		font-weight: bold;
+}
+.content-product{
+	margin-top: 100px;
+	height: auto;
+}
+#menu-product{
+	float: none;
+}
+#thumbnail-product{
+	height: 370px;
+}
+#thumbnail-product>img, #thumbnail-product a>img{
+	height: 250px;
+  width: 100%;
+}
+.btn{
+	width: 100px;
+	height: 35px;
+}
